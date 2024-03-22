@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stocks Website</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="dropdown">
+  <button class="dropbtn">Widgets</button>
+  <div class="dropdown-content">
+    <button class="dropdown-btn" data-target="userprofiles">User Profiles</button>
+    <button class="dropdown-btn" data-target="strategies">Strategies</button>
+    <button class="dropdown-btn" data-target="fotrading">F&O Trading</button>
+    <button class="dropdown-btn" data-target="ordersummary">Order Summary</button>
+    <button class="dropdown-btn" data-target="equitytrading">Equity Trading</button>
+    <button class="dropdown-btn" data-target="orderflow">Order Flow</button>
+    <button class="dropdown-btn" data-target="positions">Positions</button>
+    <button class="dropdown-btn" data-target="holdings">Holdings</button>
+  </div>
+</div>
+
+<div class="container">
+  <div class="box" id="userprofiles">
+    <div><center>User Profiles</center></div>
+    <button class="minus-btn" data-target="userprofiles"></button>
+    <button class="plus-btn" data-target="userprofiles"></button>
+    <div class="modal" id="modal-userprofiles">
+      <div class="modal-content">
+        <button class="close-btn" data-target="userprofiles"></button>
+      </div>
+    </div>
+      </div>
+<div class="box" id="strategies">
+    <div><center>Strategies</center></div>
+    <button class="minus-btn" data-target="strategies"></button>
+    <button class="plus-btn" data-target="strategies"></button>
+    <div class="modal" id="modal-strategies">
+      <div class="modal-content">
+        <button class="close-btn" data-target="strategies"></button>
+      </div>
+    </div>
+  </div>
+<div class="box" id="fotrading">
+    <div><center>F&O Trading</center></div>
+    <button class="minus-btn" data-target="fotrading"></button>
+    <button class="plus-btn" data-target="fotrading"></button>
+    <div class="modal" id="modal-fotrading">
+      <div class="modal-content">
+        <button class="close-btn" data-target="fotrading"></button>
+      </div>
+    </div>
+  </div>
+<div class="box" id="ordersummary">
+    <div><center>Order Summary</center></div>
+    <button class="minus-btn" data-target="ordersummary"></button>
+    <button class="plus-btn" data-target="ordersummary"></button>
+    <div class="modal" id="modal-ordersummary">
+      <div class="modal-content">
+        <button class="close-btn" data-target="ordersummary"></button>
+      </div>
+    </div>
+  </div>
+<div class="box" id="equitytrading">
+    <div><center>Equity Trading</center></div>
+    <button class="minus-btn" data-target="equitytrading"></button>
+    <button class="plus-btn" data-target="equitytrading"></button>
+    <div class="modal" id="modal-equitytrading">
+      <div class="modal-content">
+        <button class="close-btn" data-target="equitytrading"></button>
+      </div>
+    </div>
+  </div>
+<div class="box" id="orderflow">
+    <div><center>Order Flow</center></div>
+    <button class="minus-btn" data-target="orderflow"></button>
+    <button class="plus-btn" data-target="orderflow"></button>
+    <div class="modal" id="modal-orderflow">
+      <div class="modal-content">
+        <button class="close-btn" data-target="orderflow"></button>
+      </div>
+    </div>
+  </div>
+<div class="box" id="positions">
+    <div><center>Positions</center></div>
+    <button class="minus-btn" data-target="positions"></button>
+    <button class="plus-btn" data-target="positions"></button>
+    <div class="modal" id="modal-positions">
+      <div class="modal-content">
+        <button class="close-btn" data-target="positions"></button>
+      </div>
+    </div>
+  </div>
+<div class="box" id="holdings">
+    <div><center>Holdings</center></div>
+    <button class="minus-btn" data-target="holdings"></button>
+    <button class="plus-btn" data-target="holdings"></button>
+    <div class="modal" id="modal-holdings">
+      <div class="modal-content">
+        <button class="close-btn" data-target="holdings">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+.container {
+  width: 100vw;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.2rem;
+}
+
+.box {
+  position: relative;
+  background: #f0f0f0;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease; /* Add transition for smooth effect */
+}
+
+.box:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow effect on hover */
+}
+
+.minus-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content button {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  text-align: left;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.dropdown-content button:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+.minus-btn::after {
+  content: '➖'; /* Minus symbol */
+}
+
+/* Existing CSS */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  position: relative;
+  margin: auto;
+  width: 80%; /* Adjust as needed */
+  height: 80%;
+  max-width: 600px; /* Limit the maximum width of the modal */
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+}
+
+.close-btn::before {
+  content: "\00D7"; /* Unicode for '×' */
+}
+
+.plus-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.plus-btn:hover {
+  background-color: #45a049;
+}
+
+.plus-btn::after {
+  content: '+';
+}
+
